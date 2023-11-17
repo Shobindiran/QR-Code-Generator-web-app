@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="png" href="./images/logo.png">
+</head>
+<body>
+    <div class="card">
+        <div class="card-wrapper">
+            <div class="card-front">
+                <div>
+                    <h1><span>QR</span> Code <span>Generator</span></h1>
+                    <form id="url-form">        
+                        <div><input id="input-url" type="text" placeholder="Enter url"></div>
+                        <p class="error">Please enter valid text or link</p>
+                        <button id="url-generate" class="btn" type="submit" >Generate</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card-back">
+                <div>
+                    <h1>Your <span>QR</span> code</h1>
+                    <div>
+                        <img id="qr-code" src="" alt="link">
+                    </div>
+                    <span>
+                        <a class="btn" href="./images/logo.png" download>Download</a>
+                        <a class="btn" id="Generate-again" href="" >Generate</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
